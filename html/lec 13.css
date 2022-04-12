@@ -1,0 +1,13 @@
+/* cascading style sheet it gives style to html. it makes our website reponsive and easy to use for any device.
+syntax : 
+selector { property : value; }
+there are three types to add css in markup(html) 
+ie - inline , internal, external (best method is external isme hum html me css ko add karte hai or css ke liye alag se file banate hai) */
+#inline3
+{
+    color: chartreuse;
+}
+.inline4
+{
+    color: hotpink;
+}

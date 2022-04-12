@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> This is HTML Forms Tutorial </h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text">
+        </div>
+        <br>
+        <div>
+            Phone no.: <input type="text">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="" id="">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="" id="">
+        </div>
+        <br>
+        <div>
+            Number: <input type="number" name="" id="">
+        </div>
+        <br>
+        <label for="Are you eligible ?">Are you eligible?
+        </label>
+        <div>
+            <!--lable tag is used when we click onthe text it automatically selects the box in which the content should come-->
+            <!--the heading given in the label tag should be the same as we put in id-->
+            <input type="checkbox" name="" id="Are you eligible ?">
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="mygender" id=""> Female <input type="radio" name="mygender" id=""> Other <input type="radio" name="mygender" id="">
+        </div>
+        <br>
+        <label for="Car">Car</label>
+        <select name="Mycar" id="Car">
+        <option value=""> Swift </option>
+        <option value=""> Fortuner </option>
+        <option value=""> Indica </option>
+        <option value=""> BMW </option>
+    </select>
+        <div>
+            <br>
+            Write about yourself: <br> <textarea name="This is text area" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+        <input type="submit" value="Submit Now">  <input type="reset" value="Reset">
+    </div>
+       
+    </form>
+</body>
+</html>
