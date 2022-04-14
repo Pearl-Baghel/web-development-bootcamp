@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+.navbar{
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    /* here background color is not coming because when we use float it comes out of the parent and there navbar property  will not be applied on navbar li */
+}
+.navbar ul{
+    overflow: auto;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    /* we use this to overcome the property of float and apply the background */
+}
+.navbar li a{
+    padding: 1px 15px ;
+text-decoration: none; /* thisis used when we want to remove the underline and color which comes automatically with a link text*/
+color: white;
+}
+div{
+    color: white;
+
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="Search">
+This is Searchbox
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
