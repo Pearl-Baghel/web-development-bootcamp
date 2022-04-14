@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec23&24</title>
+    <style>
+        .navbar {
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /* here background color is not coming because when we use float it comes out of the parent and there navbar property  will not be applied on navbar li */
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin: 20px 20px;
+            padding: 10px 10px;
+            /* we use this to overcome the property of float and apply the background */
+        }
+
+        .navbar li a {
+            padding: 1px 15px;
+            text-decoration: none;
+            /* thisis used when we want to remove the underline and color which comes automatically with a link text*/
+            color: white;
+            font-size: 17px;
+        }
+        .navbar li a:hover {
+          color: red;
+        }
+        .Search{
+         float: right;
+        }
+
+        div {
+            color: white;
+
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 2px;
+        }
+        h2{
+            padding-left: 8px;        
+
+        }
+        img{
+           width: 100px;
+    padding: 8px;
+    border-radius: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="Search">
+                    <input type="text" name="Search" id="Search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <header class="Top">
+        <h2>Welcome to J.S.Baghel & Co.</h2>
+        <img src="https://pbs.twimg.com/profile_images/1388079875387322374/1_v6DeZe_200x200.jpg" alt="loading image">
+    </header>
+</body>
+
+</html>
