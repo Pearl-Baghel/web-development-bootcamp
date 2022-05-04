@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lec23&24</title>
     <style>
+        .Top {
+           /* border: 2px solid red;*/
+           /* since we have adjusted the indivial alingment of the elment we can change the margin and width element and it will change according to the screen*/
+
+           /* margin: auto;
+            width: 315px; */
+        }
+
         .navbar {
             background-color: rgb(0, 0, 0);
             border-radius: 20px;
@@ -19,7 +27,7 @@
         }
 
         .navbar ul {
-            overflow: auto;
+            overflow:auto;
             margin: 20px 20px;
             padding: 10px 10px;
             /* we use this to overcome the property of float and apply the background */
@@ -32,31 +40,41 @@
             color: white;
             font-size: 17px;
         }
+
         .navbar li a:hover {
-          color: red;
+            color: red;
         }
-        .Search{
-         float: right;
+
+        .Search {
+            float: right;
         }
 
         div {
             color: white;
 
         }
-        .navbar input{
+
+        .navbar input {
             border: 2px solid black;
             border-radius: 2px;
         }
-        h2{
-            padding-left: 8px;        
+
+        h2 {
+            padding-left: 8px;
+            text-align: center;
 
         }
-        img{
-           width: 100px;
-    padding: 8px;
-    border-radius: 100px;
+
+        img {
+            width: 100px;
+            padding: 8px;
+            border-radius: 100px;
+            margin: auto;
+            display: block;
         }
-        
+        .container {
+            color: black;
+        }
     </style>
 </head>
 
@@ -78,6 +96,25 @@
         <h2>Welcome to J.S.Baghel & Co.</h2>
         <img src="https://pbs.twimg.com/profile_images/1388079875387322374/1_v6DeZe_200x200.jpg" alt="loading image">
     </header>
+    <div class="container">
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum ducimus placeat delectus optio debitis aspernatur possimus non consectetur voluptatibus? Adipisci a ut sapiente ipsum animi. Facere, aperiam eum, libero eius non tempore voluptas voluptatem in necessitatibus vitae molestiae. Odio quod qui totam ullam id, at debitis voluptatem expedita nisi.</p>
+    </div>
+</div>
+<div class="container">
+    <div class="box">
+    <h4 class="heading">Heading</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum ducimus placeat delectus optio debitis aspernatur possimus non consectetur voluptatibus? Adipisci a ut sapiente ipsum animi. Facere, aperiam eum, libero eius non tempore voluptas voluptatem in necessitatibus vitae molestiae. Odio quod qui totam ullam id, at debitis voluptatem expedita nisi.</p>
+</div>
+</div>
+<div class="container">
+    <div class="box">
+    <h4 class="heading">Heading</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum ducimus placeat delectus optio debitis aspernatur possimus non consectetur voluptatibus? Adipisci a ut sapiente ipsum animi. Facere, aperiam eum, libero eius non tempore voluptas voluptatem in necessitatibus vitae molestiae. Odio quod qui totam ullam id, at debitis voluptatem expedita nisi.</p>
+</div>
+</div>
+
 </body>
 
 </html>
