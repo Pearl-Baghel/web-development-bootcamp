@@ -6,15 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J.S.Baghel & Co.</title>
     <style>
+        /* CSS Reset*/
         body{
-            background-image: url('https://wallpaper.dog/large/5473050.jpg');
+            margin: 0px;
+            padding: 0px;
+            /*
+           background-image: url('https://wallpaper.dog/large/5473050.jpg');*/
+           background-image: url('https://kinneygroup.com/wp-content/uploads/2020/09/accounting-watts-scaled.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+           /* height: 2345px;*/
+        }
+        .navbar {
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /* here background color is not coming because when we use float it comes out of the parent and there navbar property  will not be applied on navbar li */
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin: 20px 20px;
+            padding: 10px 10px;
+            /* we use this to overcome the property of float and apply the background */
+        }
+        .navbar li a {
+            padding: 1px 15px;
+            text-decoration: none;
+            /* thisis used when we want to remove the underline and color which comes automatically with a link text*/
+            color: white;
+            font-size: 17px;
+        }
+        .navbar li a:hover {
+          color: rgb(66, 66, 212);
+        }
+        .Search{
+         float: right;
+        }
+
+        div {
+            color: white;
+
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 2px;
+        }
+        img {
+            width: 100px;
+            padding: 8px;
+            border-radius: 100px;
+            margin: auto;
+            display: block;
+        }
+        h1{
+            text-align: center;
+        }
+        .content1{
+            text-align: left;
+            color: black;
+                }
+                h3{
+                    padding-left: 20px;
+                }
+        p{
+            height: 100px;
+            width: 600px;
+            padding-left: 20px;
         }
     </style>
 </head>
+<link rel="stylesheet" href="style.css"> 
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="Search">
+                    <input type="text" name="Search" id="Search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <header class="Top">
+        <h1>Welcome to J.S.Baghel & Co.</h1>
+        <img src="https://pbs.twimg.com/profile_images/1388079875387322374/1_v6DeZe_200x200.jpg" alt="loading image">
+    </header>
+    <div class="content1">
+        <h3>About Us</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis nam, praesentium nostrum nihil ullam exercitationem error iure. Eveniet fugit, neque quidem illo quo quam facere vero tempora doloremque debitis! Eum, harum fugit distinctio alias id cupiditate aliquid. Voluptatem, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequatur, possimus minus molestias nisi quia vero nostrum error. Exercitationem soluta quis, adipisci, dolores doloremque alias nam placeat recusandae corporis dolorum aliquam dicta. Sit doloribus neque ipsam veniam assumenda necessitatibus ipsum impedit? Animi laudantium ad consequatur, quae recusandae doloremque voluptatem numquam.</p>
+    </div>
 </body>
 </html>
