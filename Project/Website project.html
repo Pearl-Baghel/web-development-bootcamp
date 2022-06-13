@@ -12,9 +12,9 @@
     <style>
         /* CSS Reset*/
         body {
-            margin: 0px;
-            padding: 0px;
+            width: fit-content;
             background-color: rgb(166, 207, 212);
+
             /*
            background-image: url('https://wallpaper.dog/large/5473050.jpg');
            background-image: url('https://kinneygroup.com/wp-content/uploads/2020/09/accounting-watts-scaled.jpg');
@@ -96,6 +96,7 @@
         p {
             width: auto;
             color: black;
+            size: 20px;
         }
 
         .quotes {
@@ -104,7 +105,7 @@
             border: 5px solid black;
             background-color: transparent;
             width: 425px;
-            height: 200px;
+            height: fit-content;
             box-sizing: border-box;
             float: right;
         }
@@ -123,7 +124,7 @@
             margin: 20px;
             margin-top: 35px;
             padding: 15px;
-            width: 405px;
+            width: 400px;
             height: 250px;
             box-sizing: border-box;
             display: inline-block;
@@ -137,6 +138,7 @@
         .para {
             width: 360px;
             padding-right: 20px;
+            text-align: center;
         }
 
         #image {
@@ -149,9 +151,10 @@
 
         .quote {
             width: fit-content;
-            padding-right: 20px;
             text-align: center;
-            font-size: 25px;
+            font-style: italic;
+    font-size: 20px;
+    padding: 20px;
         }
 
         .testimonial {
@@ -180,9 +183,6 @@
 
 
         }
-.footer{
-    display: inline-block;
-}
         .form input {
             padding: 5px;
             border: 2px black solid;
@@ -195,13 +195,17 @@
 
         .formgroup {
             margin: 20px;
-           
+           color: black;
+            margin: 20px;
             text-align: right;
         }
 
         .btn {
             font-size: 20px;
             border-radius: 5px;
+            display: block;
+            margin: auto;
+           
         }
         .btn :hover {
             color: #2B193D;
@@ -211,13 +215,10 @@
         .fabout {
             width: 300px;
             display: inline-block;
+            text-align: justify;
         }
-        .formbox button{
-            display: block;
-            margin: auto;
-            width: fit-content;
-        
-        }
+    
+
     </style>
 </head>
 <link rel="stylesheet" href="style.css">
@@ -247,30 +248,37 @@
     <div class="content1">
         <h2>About Us</h2>
         <div class="quotes">
-            <p class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias hic ullam doloremque
-                aperiam nihil libero est quia quisquam unde voluptates.</p>
+            <p class="quote">Our main focus is to create synergies by means of amalgamation of different business values to highly value added services offered to the clients. This helps us in strengthening client’s trust, prospects and growth</p>
         </div>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis nam, praesentium nostrum nihil ullam
-            exercitationem error iure. Eveniet fugit, neque quidem illo quo quam facere vero tempora doloremque debitis!
-            Eum, harum fugit distinctio alias id cupiditate aliquid. Voluptatem, cumque. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Repellendus consequatur, possimus minus molestias nisi quia vero nostrum
-            error. Exercitationem soluta quis.<br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit odit minima esse fugiat. Dolorem
-            doloribus voluptatum nobis veritatis blanditiis ipsa possimus
-            minus quos perspiciatis dolore aspernatur expedita eos quam consequuntur, rem error itaque ipsam laudantium!
-            Itaque architecto unde maxime quidem consequatur ab dignissimos, placeat perferendis quasi velit, distinctio
-            a?
-            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eum voluptates dolorem iure in,
-            magnam nisi quas aperiam aliquam amet, tempore quia. Dolore, veritatis illum eum qui sapiente nemo
-            distinctio iusto voluptatem, dicta quaerat veniam blanditiis aut, voluptas quos est! Lorem ipsum dolor sit
-            amet consectetur, adipisicing elit. Nisi doloremque libero architecto, esse in dignissimos adipisci
-            consequatur beatae similique, hic nulla tempore possimus unde itaque qui, consectetur dolore dicta pariatur!
+           <b>J S Baghel & Co. Chartered Accountants</b> is leading Chartered Accountant firm centrally located in the city of Bhopal, India was founded by Ca Jitendra Singh Baghel on 27th September, 2000 (deemed date 15th September, 1997).<br><br>
+J S Baghel & Co.  is established Chartered Accountant firm rendering comprehensive professional services which includes <em>Independent Audit & Assurance, Internal/Concurrent audits, Accountancy, US GAAP restatement, Foreign exchange and regulatory consulting, restructuring and valuations, Corporate support, Legal and Secretarial support, management consultancy, Local MPVAT, Service Tax, PF/ESIC, Professional Tax consultancy, Tax Audit and Advice on Indirect Taxes like GST, Central Excise and Customs, arrangement of project and retail Finance, Development of Internal control system along with integration of various departments of the companies.</em><br><br>
+J S Baghel & Co. believe in providing Chartered Accounting services by maintaining motivated work force, client retention, high integrity, dedication, sincerity, quality of service and professionalism. Our business operations are led by FCA Jitendra Singh Baghel who is successful Chartered Accountant in practice.
+Other than the partners we also have experienced management support in the form of qualified staff whose mutual understanding helps us in exploring new avenues & expansions.
+
 
         </p>
     </div>
     <div class="container">
         <h2 class="heading">What we do ?</h2>
+        <div class="box">
+            <h3 class="what we do">Bank Audits</h3>
+            <p class="para">The firm handle all kinds of bank audits and investigation matters of Private banks, Scheduled banks, Co-operative banks and other banking entities.
+                AS PER RBI EMPANELMENT NORMS OF MULTIPLE EMPANELMENTS FOR FIRMS, CURRENTLY THE FIRM IS CATEGORIZED AS CATEGORY III FIRM OF AUDIT ENTITLEMENTS.</p>
+        </div>
+        <div class="box">
+            <h3 class="what we do">Statutory Audits</h3>
+            <p class="para">
+                The audit as may be required by the statute and if properly planned, it can become a useful management tool. The approach at our firm enables us to focus our time and effort on the most significant areas of the accounts and controls. So we not only keep our time cost to minimum but also increase the effectiveness of the audit and thus provide maximum value to the client. Statutory or external audit is often seen as legal imposition rather than something that can add value to your business.
+                </p>
+        </div>
+        <div class="box">
+            <h3 class="what we do">service1</h3>
+            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum ducimus placeat
+                delectus optio debitis aspernatur possimus non consectetur voluptatibus? Adipisci a ut sapiente ipsum
+                animi. Facere, aperiam eum, libero eius non tempore voluptas voluptatem in necessitatibus vitae
+                molestiae. Odio quod qui totam ullam id, at debitis voluptatem expedita nisi.</p>
+        </div>
         <div class="box">
             <h3 class="what we do">service1</h3>
             <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa laborum ducimus placeat
@@ -315,34 +323,35 @@
                 elit. Libero, cupiditate. Aut nobis nulla modi distinctio vel vitae nam tempora
                 veritatis!<br><br><b>Client name</b></p>
         </div>
-        <footer>
+     
             <h1>Contact us Now</h1>
             <div class="form">
                 <!--form me yaha data kisi backhand pe jaiga but abhi  koi backend pe kaam nhi hua hai to aisa nhi hoga but just in case ke liye hum ek front end form bana rahe hai-->
                 <form action="noaction.php">
-                    <p class="fabout">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, perspiciatis. Nobis
+                    <p class="fabout">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, perspiciatis. Nobis Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aspernatur doloremque quo! Veritatis saepe dolores quaerat minima, atque tenetur earum?
                         obcaecati beatae, atque magni adipisci quia assumenda sunt quibusdam. Ipsam quas hic impedit
                         quis pariatur blanditiis atque fuga distinctio?</p>
                     <div class="formbox">
                         <div class="formgroup">
-                            <input type="text" Name="" placeholder="Enter your name">
+                           <b>Name : </b><input type="text" Name="" placeholder="Enter your name">
                         </div>
                         <div class="formgroup">
-                            <input type="text" Name="" placeholder="Enter your Number">
+                           <b>Phone No. :</b> <input type="number" Name="" placeholder="Enter your Number">
                         </div>
                         <div class="formgroup">
-                            <input type="text" Name="" placeholder="Enter your Email">
+                           <b>Email :</b> <input type="email" Name="" placeholder="Enter your Email">
                         </div>
                         <div class="formgroup">
-                            <input type="text" Name="" placeholder="Enter your Locality">
+                           <b> Location :</b> <input type="text" Name="" placeholder="Enter your Locality">
                         </div>
                         <div class="button">
                             <button class="btn"><a><b>Submit</b></a></button>
                         </div>
                     </div>
+                    
                 </form>
             </div>
-        </footer>
+       
 
 </body>
 
