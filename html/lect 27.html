@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        /* z- index will work only in postion : relative, absolute,fixed or static*/
+        
+        /* z index help karta hai elements ki positioning me ki konsa element kaha aana chahiye */
+        /* but there are complaints that z index work nhi karta because vo position element ke according rehta hai */
+        /* will hide the elmement and the space.
+        display: none;*/
+        /* will hide the element but will show its empty space.
+        visibility:hidden;*/
+
+        #box1{
+            position: relative;
+            top: 49px;
+            background-color: greenyellow;
+            z-index: 50;
+        }
+        #box2{
+            position: relative;
+            top: 14px;
+            background-color: rgb(255, 182, 47);
+            z-index: 34;
+        } 
+        #box3{
+            background-color: rgb(47, 255, 227);
+        }
+         #box4{
+            background-color: rgb(154, 47, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 this command is used to make 4 div with class box and id box(1-4) -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
