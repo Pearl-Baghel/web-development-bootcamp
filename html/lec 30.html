@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            /* now we are using media querry to add some responsiveness */
+            display: none;
+        }
+        @media only screen and (max-width:300px) 
+        {
+            #box1{
+                display: block;
+                background-color: darkgreen;
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box2{
+                display: block;
+                background-color: orangered;
+            }
+        }
+        
+        @media only screen and (min-width: 500px) and (max-width:800px) {
+            #box3{
+                display: block;
+                background-color: navy;
+            }
+        }
+        @media only screen and (min-width: 800px)  {
+            #box4{
+                display: block;
+                background-color: yellow; 
+                color: brown;
+            }
+        }
+        
+        /* Media Querry is a like a if condition which will work only when the condition is applied */
+        /* Media type are of various type therefore we add Only screen beacuse we support only screen type media type */
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Mai ek iPhone hu</div>    
+    <div class="box" id="box2">Mai ek Tablet hu </div>    
+    <div class="box" id="box3">Mai ek desktop Computer hu </div>    
+    <div class="box" id="box4">Mai ek wide screen computer hu</div>    
+</body>
+</html>
