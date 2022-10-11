@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute and Nth child Pseudo selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        a[target] {
+            font-size: 30px;
+            color: pink;
+        }
+
+        a[target='_self'] {
+            font-size: 30px;
+            color: green;
+        }
+
+        input[type="email"] {
+            border: 2px solid yellow;
+            color: brown;
+        }
+/* This will put css on 3rd point */
+      li:nth-child(3) {
+            color: orangered;
+        } 
+        /* This will put css on every(after) 2rd point */ 
+        li:nth-child(2n+0) {
+            color: greenyellow;
+        }
+        li:nth-child(odd) {
+            background-color: rgb(255, 9, 103);
+        }
+        li:nth-child(even) {
+            background-color: black;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
+        <h1><a href="https://www.google.com/" target="_blank">Go To Google</a></h1>
+        <h1><a href="https://accounts.google.com/b/0/AddMailService" target="_self">Go To Gmail</a></h1>
         <form action="" class="form-control">
-            <input type="text" placeholder="Enter your name">            
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
             <input type="password" placeholder="Enter your password">
-            <input type="submit" value="Submit">            
-
+            <input type="submit" value="Submit">
         </form>
         <ul>
             <!-- shortcut for class - li.item*4
@@ -24,7 +73,18 @@
             <li class="item" id="item-4">Item 4</li>
             <li class="item" id="item-5">Item 5</li>
             <li class="item" id="item-6">Item 6</li>
+            <li class="item" id="item-7">Item 7</li>
+            <li class="item" id="item-8">Item 8</li>
+            <li class="item" id="item-9">Item 9</li>
+            <li class="item" id="item-10">Item 10</li>
+            <li class="item" id="item-11">Item 11</li>
+            <li class="item" id="item-12">Item 12</li>
+            <li class="item" id="item-13">Item 13</li>
+            <li class="item" id="item-14">Item 14</li>
+            <li class="item" id="item-15">Item 15</li>
+            <li class="item" id="item-16">Item 16</li>
         </ul>
     </div>
 </body>
+
 </html>
