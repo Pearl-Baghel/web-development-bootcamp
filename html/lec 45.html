@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid +Media Querries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .border {
+            border: 2px solid black;
+            padding: 25px;
+            background-color: pink;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact us</span>
+        </nav>
+        <section class="border">
+            <h2>Learn Css in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorum facere, cumque expedita est sint molestias qui quasi dolorem provident vero veniam quod placeat, temporibus eligendi, eum incidunt fugiat illo sapiente aliquam deleniti neque aperiam! Molestiae, quis laborum ducimus provident ea, excepturi porro ullam deleniti officia expedita et minima, suscipit veritatis ipsum. Mollitia, amet corrupti rem similique dolores accusantium quaerat. Autem tempore distinctio iste incidunt non similique sint nesciunt temporibus deleniti quod, sunt voluptatem sit placeat. Voluptates, sed. Amet officiis provident, necessitatibus earum quisquam vero minus maiores, debitis, mollitia enim architecto unde. Quidem laboriosam aut ratione optio amet ipsum obcaecati recusandae, officia harum reiciendis necessitatibus ipsam neque alias rerum inventore quibusdam iste unde molestias vel soluta deserunt. Aliquam illo excepturi delectus facilis, ipsam iusto eos.
+            </p>
+        </section>
+        <aside class="border">
+            <h1>More About Us</h1>
+        </aside>
+        <footer class="border">
+            Copyright PizzaPearl
+        </footer>
+    </div>
+</body>
+
+</html>
