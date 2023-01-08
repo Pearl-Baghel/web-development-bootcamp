@@ -1,0 +1,9 @@
+What is javascript?
+Javascript is a client side scripting language. I is used to make we pages alive
+When javascript was created it was initially called Livescript but java was a very popular language at that time so it was decided that the language should be called as the younger brother of java calling it JAVASCRIPT.
+What can javascript do ?
+Javascript can execute in browser and client as well in server side
+What can In-Browser Javascript can do ?
+Javascript is a very Safe language ( it doesnot affect in low end and cpu of the user therfore not harmful) 
+Add new HTML and change existing HTML from DOM (DOM means the page )
+React to events (filling of form and storing that data) 
