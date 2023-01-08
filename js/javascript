@@ -11,3 +11,9 @@ Ajax requests(very imp) listen kare request ko aur as per requirment function pe
 Get & Set Cookies & Use local Storage (Bar bar ek hi browser ko data bhejne ki zarurat nhi padegi server pe vo ek bar data leke firse jab hum website ko visit karenge to automatic data le lega)
 What can't In-Browser Javascript do?
 Read/Write to and from computer hard disk(can NOT take data from user hardisk with the users permission)
+Ajax request ..The browser works on same origin policy it does not allow to take data from the one page to other of the user 
+By default humko error milega but kuch header use karke yeh possible hai ki hum ek website se dusri website ka data le sakte hai 
+What makes javascript unique?
+Full support to HTML/CSS
+Simple things and Simple API
+Mojor modern browser ko full support by default enabled hoti hai 
