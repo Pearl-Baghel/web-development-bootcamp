@@ -6,4 +6,8 @@ Javascript can execute in browser and client as well in server side
 What can In-Browser Javascript can do ?
 Javascript is a very Safe language ( it doesnot affect in low end and cpu of the user therfore not harmful) 
 Add new HTML and change existing HTML from DOM (DOM means the page )
-React to events (filling of form and storing that data) like responsive from server  
+React to events (filling of form and storing that data) like responsive from server 
+Ajax requests(very imp) listen kare request ko aur as per requirment function perform kare.. 
+Get & Set Cookies & Use local Storage (Bar bar ek hi browser ko data bhejne ki zarurat nhi padegi server pe vo ek bar data leke firse jab hum website ko visit karenge to automatic data le lega)
+What can't In-Browser Javascript do?
+Read/Write to and from computer hard disk(can NOT take data from user hardisk with the users permission)
