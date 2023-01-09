@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Function</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str="This is a String ";
+        console.log(str);
+        // first occuance of substring
+var position = str.indexOf('is');
+console.log(position);
+//last occurance of substring
+position =str.lastIndexOf('is');
+console.log(position);
+//Substring from a string
+var substr = str.slice(1,5);
+// var substr = str.slice(1,7); It can take negetive values as well
+var substr = str.substring(1,7); // It can take only positive values
+var substr1 = str.substr(1,10); // in this the first parameter will tell the starting point and the second parameter will tell the length of the string that we have to take
+console.log(substr1);
+console.log(substr);
+var replaced = str.replace('String' ,'Harry');
+console.log(str);
+console.log(replaced);
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+var newstring= str.concat(' New String');
+console.log(newstring);
+console.log(str + 'also new string');
+
+var strwithwhitespaces= ('    this containes       whitespaces  ');
+console.log(strwithwhitespaces);
+console.log(strwithwhitespaces.trim()); // removes white spaces from start and end not from middle.
+
+var char2 = str.charAt(2);
+console.log(char2);
+// this will start the index from 0 and tell what is the character at position 2 
+
+var charcode = str.charCodeAt(2);
+console.log(charcode);
+    </script>
+</body>
+</html>
