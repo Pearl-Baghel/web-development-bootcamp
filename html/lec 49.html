@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Strings and String Methods </title>
+</head>
+<body>
+    <div class="conatiner">
+        <h1>Heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam earum obcaecati, quaerat nisi nulla quis blanditiis recusandae numquam magni culpa ipsum cupiditate nemo vitae id a provident facere, eos atque distinctio maxime optio et. Laudantium.</p>
+    </div>
+    <script>
+        // var string ="this"; 
+        var string ='This';
+        var name =' Grill Pearl';
+        var channel =' PizzaWorld';
+        var message =' is very good';
+        //template literate
+        var temp=`${name} is a "nice" person and 'she' has a channel called ${channel}`;
+        // console.log(string + name + message);
+        console.log(temp);
+        var len = name.length;
+        var len2 = message.length;
+        console.log("Length of message is " + len2)
+        console.log(`Length of name is ${len}`);
+// another way of writing string
+var y=new String("This");
+console.log(y); 
+document.getElementById('content').innerHTML = '<h3> This is an H3 heading </h3>'
+        
+    </script>
+</body>
+</html>
