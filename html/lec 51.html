@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes and Conditionals</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = 'This is a String';
+        var string1 = 'This is a String2';
+        //We can redeclare var
+        //Var ka SCOPE GLOBAL hota hai 
+        console.log(string1);
+        let a = 'u'; //Let ka Scope BLOCK LEVEL me hi rehta hai block ke bahar uski value nhi hoti
+        {
+            let a = 'u6';
+            console.log(a);
+        }
+        console.log(a);
+
+        const b = "This can't be changed";
+        //This is constant and we can't change this is any condition 
+        // b = 'But if i want to change this';
+        console.log(b);
+
+        let num = 34;
+        if (num > 18) {
+            console.log('You can drink Alcohol');
+        }
+        else {
+            console.log('you can drink hot water')
+        }
+        let age = 4;
+        if (num > 18) {
+            console.log('Age is more then 18');
+        }
+        else if(age==2){
+            console.log('Age is 2')
+        }
+        else {
+            console.log('Age is less then 18 and not 2')
+        }
+        // if else condition ka use form validation me ho sakta hai agar user galat information input karta hai to 
+
+        //SWITCH CASE Statement
+        // Break is used cause agar break hata diya to vo sare case run kar dega 
+        const cups=8;
+        switch (cups) {
+            case 4:
+                console.log('Values of cups is 4');
+                break;
+            case 42:
+                console.log('Values of cups is 42');
+                break;
+            case 7:
+                console.log('Values of cups is 7');
+                break;
+            case 3:
+                console.log('Values of cups is 3');
+                break;
+            case 34:
+                console.log('Values of cups is 34');
+                break;
+        
+            default:
+                console.log('Values of cups is none of 4,42,7,3,34')
+                break;
+        }
+    </script>
+</body>
+
+</html>
