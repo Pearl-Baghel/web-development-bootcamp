@@ -19,7 +19,18 @@
 
   let name = prompt("What is your name?" , "Guest");
   console.log(name);
-  //in prompt we will ask question in first argument and in the second argument we will give a default value
+  //in prompt we will ask question in first argument and in the second argument we will give a default value 
+   
+  //confirm is used to double check the document
+
+  let deletepost = confirm("Do you really wanna delete this post?");
+//   console.log(deletepost);
+  if(deletepost){
+    console.log("Your post has been deleted succesfully");
+  }
+  else{
+    console.log("Your post has not been deleted");
+  }
 
 
 </script>
