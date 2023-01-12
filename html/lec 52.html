@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+    <div class="container">Simple HTML</div>
+    <script>
+        let myvar = 34;
+        let myvar2 = "String";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+        //OBJECT
+        let employee = {
+            name: "Pearl",
+            salary: 20,
+            channel: 'PizzaWorld',
+            "channel 2": 'CookieWorld',
+        }
+        console.log(employee);
+        console.log(employee.channel)
+        console.log(employee['channel 2']);
+
+        // let names=[1,2,3,"harry",undefined]
+        // let names= new Array(41,2,3,"harry",undefined);
+        let names = new Array(23);
+        console.log(names.length);
+        names = names.sort();
+        names.push('this is pushed');
+        console.log(names);
+
+    </script>
+</body>
+
+</html>
