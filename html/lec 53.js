@@ -1,0 +1,1 @@
+console.log("This is lex    cture 53 for external javascript ");
