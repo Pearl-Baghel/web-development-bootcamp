@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="main" class="container">
-        <ul class="nav">
+        <ul id="nav">
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
@@ -18,11 +18,18 @@
             <li>Contact us</li>
         </ul>
     </div>
+    <div class="container">
+        Another container
+    </div>
     <script>
         let main = document.getElementById('main');
         console.log(main);
         let nav = document.getElementById('nav');
         console.log(nav);
+        nav.innerHTML
+        nav.innerHTML = '<li> change html to dynamic element</li>'
+        let container =document.getElementsByClassName('container');
+        console.log(container);
     </script>
 </body>
 </html>
