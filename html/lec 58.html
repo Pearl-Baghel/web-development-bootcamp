@@ -13,6 +13,25 @@
     <script>
         console.log("This is lecture 58");
         console.log("This is lecture 58");
+
+    // setTimeout --> Allows us to run the function once after the interval of time
+    // clearTimeout --> Allows us to run the function repeatedly after the interval of time.
+
+    function greet(name , byetext){
+        console.log('Hello Good Morning ' + name + byetext );
+    }
+    setTimeout (greet, 5000 , 'Pearl' , ' Take care');
+    
+    // setTimeout(greet(),5000); --> wrong as it is calling a function inside a setTimeout which is not allowed
+
+    timeout = setTimeout (greet, 5000 , 'Pearl' , ' Take care');
+    console.log(timeout);
+clearTimeout(timeout);
+// this can be used for example when a new user is reading you website you cana sk them to sign up after a time interval but if before that only the user had already signed up then that command will be waste so we set up cleartimeout command to stop settime out command from running..
+
+ setInterval(greet , 5000 ,'Pizza' , ' Take care');
+ // setInterval is used to run the same text after a particular interval of time.
+    
     </script>
 </body>
 </html>
