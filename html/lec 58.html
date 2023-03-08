@@ -9,6 +9,9 @@
 <body>
     <div class="container">
         This is container
+        Time now is <span id="time">
+
+        </span>
     </div>
     <script>
         console.log("This is lecture 58");
@@ -32,6 +35,13 @@ clearTimeout(timeout);
  setInterval(greet , 5000 ,'Pizza' , ' Take care');
  // setInterval is used to run the same text after a particular interval of time.
     
+ function displayTime(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('time').innerhtml = time;
+ }
+
+ setInterval(displayTime, 2000);
     </script>
 </body>
 </html>
