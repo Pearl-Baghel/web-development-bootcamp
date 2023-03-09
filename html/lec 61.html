@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a Math object tutorial</h1>
+    </div>
+    <script>
+        let m = Math;
+        console.log(m);
+        console.log("The value of Math.E is ", Math.E);
+        console.log("The value of Math.PI is ", Math.PI);
+        console.log("The value of Math.LN2 is ", Math.LN2);
+        console.log("The value of Math.LOG2E is ", Math.LOG2E);
+        console.log("The value of Math.SQRT2 is ", Math.SQRT2);
+
+        E: 2.718281828459045
+        LN2: 0.6931471805599453
+        LN10: 2.302585092994046
+        LOG2E: 1.4426950408889634
+        LOG10E: 0.4342944819032518
+        PI: 3.141592653589793
+        SQRT1_2: 0.7071067811865476
+        SQRT2: 1.4142135623730951
+
+        let a = 34.837584;
+        let b = 69;
+        console.log("The value of a and b is", a, b);
+        console.log("The value of a and b rounded is", Math.round(a), Math.round(b));
+
+        console.log("3 raised to pover 6 is ", Math.pow(3, 6));
+        console.log("square root of 50 is ", Math.sqrt(50));
+        console.log("round up to ceil of sq. root of 50 ", Math.ceil(Math.sqrt(50)));
+
+// gemerating random no.
+let r= Math.random();
+console.log("Th randon no. is ",r);
+ 
+let c=50;
+let d= 60;
+let r1_100 = c+ (d-c)*Math.random();
+console.log("Random no . between 50-60 is ", Math.round(r1_100));
+    </script>
+
+</body>
+
+</html>
