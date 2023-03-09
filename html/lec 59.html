@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Dates</title>
 </head>
+<style>
+    .container{
+        font-size: 25px;
+        background-color: brown;
+    border: 2px solid black;
+    padding: 35px;
+    margin: 5px;
+    border-radius: 200px;
+    text-align: center;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
 <body>
     <div class="container">
-        This is a container
+     Current time is <span id="time" ></span>
     </div>
 
     <script>
@@ -25,6 +39,22 @@
         // let newdate1 = new Date('year , month , date , hours , minutes, second, millisecond');
         let newdate1 = new Date (3020, 4,6,9,3,2,34);
         console.log(newdate1);
+
+        let yr = newdate.getFullYear();
+        console.log('This year is ', yr);
+
+        let dat = newdate.getDate();
+        console.log('This date is ', dat);
+
+        newdate1.setDate(8);
+console.log(newdate1);
+
+setInterval(updateTime , 1000);
+
+function updateTime(){
+    time.innerHTML = new Date();
+}
+
     </script>
 </body>
 </html>
